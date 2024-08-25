@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL]
+    domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL, '10.0.0.108']
       .filter(Boolean)
       .map(url => url.replace(/https?:\/\//, '')),
   },
