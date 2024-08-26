@@ -6,6 +6,13 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '10.0.0.108',
+        port: '3000',
+      },
+    ],
     domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL, '10.0.0.108:3000', '10.0.0.108']
       .filter(Boolean)
       .map(url => url.replace(/https?:\/\//, '')),

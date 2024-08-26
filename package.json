@@ -75,6 +75,8 @@
     "typescript": "^4.8.4"
   },
   "trustedDependencies": [
-    "es5-ext"
+    "@swc/core",
+    "es5-ext",
+    "sharp"
   ]
 }
